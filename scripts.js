@@ -20,7 +20,7 @@ function createChart(chartId, label, data) {
 
 async function updateStockData(stockId, priceElementId, relatedElementId, chartId) {
     try {
-        const response = await fetch(`https://sinhwajejagso.github.io/miju/${stockId}`);
+        const response = await fetch(`https://sinhwajejagso.github.io/${stockId}`);
         const data = await response.json();
         
         document.getElementById(priceElementId).textContent = `$${data.price?.toFixed(2) || 'N/A'}`;
