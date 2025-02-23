@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Trend Stocks</title>
+    <link rel="stylesheets" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>American Trend Stocks</h1>
+        <nav>
+            <a href="#tsla">Tesla</a>
+            <a href="#nvda">NVIDIA</a>
+            <a href="#pltr">Palantir</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tsla" class="stock-section">
+            <h2>Tesla (TSLA)</h2>
+            <div class="chart" id="tsla-chart">Stock Price Graph</div>
+            <div class="stock-info">
+                <h3>Current Price</h3>
+                <p id="tsla-price">Loading...</p>
+                <h3>Related Products</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Current Price</th>
+                            <th>Volume</th>
+                            <th>Volume Change</th>
+                        </tr>
+                    </thead>
+                    <tfoot id="tsla-related">
+                        <tr><td colspan="4">Loading data...</td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section id="nvda" class="stock-section">
+            <h2>NVIDIA (NVDA)</h2>
+            <div class="chart" id="nvda-chart">Stock Price Graph</div>
+            <div class="stock-info">
+                <h3>Current Price</h3>
+                <p id="nvda-price">Loading...</p>
+                <h3>Related Products</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Current Price</th>
+                            <th>Volume</th>
+                            <th>Volume Change</th>
+                        </tr>
+                    </thead>
+                    <tfoot id="nvda-related">
+                        <tr><td colspan="4">Loading data...</td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section id="pltr" class="stock-section">
+            <h2>Palantir (PLTR)</h2>
+            <div class="chart" id="pltr-chart">Stock Price Graph</div>
+            <div class="stock-info">
+                <h3>Current Price</h3>
+                <p id="pltr-price">Loading...</p>
+                <h3>Related Products</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Current Price</th>
+                            <th>Volume</th>
+                            <th>Volume Change</th>
+                        </tr>
+                    </thead>
+                    <tfoot id="pltr-related">
+                        <tr><td colspan="4">Loading data...</td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
